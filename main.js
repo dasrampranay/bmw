@@ -77,10 +77,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toast
     const toast = document.getElementById('toast');
 
+    // Navigation Mobile Toggle elements
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
     // --- Initialize ---
     function init() {
         if (showroomGrid) renderShowroom();
         if (garageCount) updateGarageView();
+        
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                hamburger.classList.toggle('toggle');
+            });
+            
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('nav-active');
+                    hamburger.classList.remove('toggle');
+                });
+            });
+        }
     }
 
     // --- Navigation Logic ---
