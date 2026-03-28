@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | BMW Pulse</title>
+    <meta name="description" content="Learn more about BMW Pulse and our commitment to driving excellence.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none;">
+                <span class="bmw-logo-text">BMW <span class="accent-color">Pulse</span></span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Showroom</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#garage">My Garage <span id="garage-count" class="badge">0</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="view active-view" style="padding-top: 5rem;">
+            <div class="hero garage-hero" style="background: radial-gradient(circle at center, rgba(70, 184, 232, 0.15) 0%, var(--bg-color) 70%); height: 50vh;">
+                <div class="hero-content">
+                    <h1 class="hero-title">The <span class="gradient-text">Future</span> is Now</h1>
+                    <p class="hero-subtitle">We don't just build cars. We build the ultimate driving machine, engineered to excite your senses and redefine your journey.</p>
+                </div>
+            </div>
+
+            <div class="container" style="padding-top: 4rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-bottom: 5rem;">
+                    <div>
+                        <h2 class="section-title">Our Vision</h2>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem;">At BMW Pulse, our vision extends far beyond manufacturing vehicles. We aim to create mobility solutions that inspire, excite, and leave a lasting impression. Every model in our digital showroom is a testament to our relentless pursuit of perfection.</p>
+                        <p style="color: var(--text-secondary); font-size: 1.1rem; margin-top: 1rem;">From the roar of an M engine to the silent surge of an i series, we deliver uncompromising joy on every road.</p>
+                    </div>
+                    <div style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; text-align: center;">
+                        <div>
+                            <h3 style="font-size: 3rem; font-family: var(--font-heading); font-weight: 800; color: var(--pure-accent);">100+</h3>
+                            <p style="color: var(--text-secondary); text-transform: uppercase; letter-spacing: 2px;">Years of Engineering Excellence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow: hidden;">
+                    <div style="padding: 3rem;">
+                        <h3>Sustainable Mobility</h3>
+                        <p style="color: var(--text-secondary); margin-top: 1rem; max-width: 800px; font-size: 1.1rem;">We are committed to a sustainable future. Through the expansion of our fully electric fleet and the implementation of circular economy principles in our manufacturing processes, we are drastically reducing our carbon footprint while maintaining the signature BMW dynamics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="border-top: 1px solid var(--border-color); background: var(--glass-bg); padding: 3rem 5%; margin-top: 4rem; text-align: center; color: var(--text-secondary);">
+        <p>&copy; 2026 BMW Pulse. All rights reserved. <span style="margin: 0 10px;">|</span> <a href="#" style="color: var(--text-secondary); text-decoration: none;">Privacy Policy</a> <span style="margin: 0 10px;">|</span> <a href="#" style="color: var(--text-secondary); text-decoration: none;">Terms of Service</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
